@@ -1,0 +1,66 @@
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+}
+
+li {
+    list-style: none;
+    display: inline;
+    max-width: 50px;
+}
+
+section {
+    margin: 0 60px;
+    padding: 10px;
+}
+
+p {
+    margin: 20px;
+}
+
+h2 {
+    border-right: 5px solid gray;
+    padding: 20px;
+}
+
+footer {
+    background-color: rgb(247, 168, 214);
+    text-align: center;
+}
+
+a:link {
+    color: darkslategrey;
+}
+
+a:hover {
+    color:rgb(238, 21, 155);
+    text-decoration: wavy;
+}
+
+.navigation {
+    text-align: right;    
+
+}
+
+
+.header {
+    background-color: aquamarine
+}
+
+
+.about {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.work {
+    display: flex;
+    justify-content: space-around;
+}
+
+.contact {
+    display: flex;
+    justify-content: space-between;
+}
+
