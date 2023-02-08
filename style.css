@@ -1,16 +1,21 @@
-* {
+/* * {
     border: 1px solid gray;
 
-}
+} */
 
 header {
     display: flex;
     justify-content: space-around;
     align-items: center;
     flex-direction: inline;
+    margin-left: auto;
 }
 
-
+h1 {
+    padding: 0;
+    margin: 0;
+    align-items: flex-start;
+}
 
 a:hover {
     color:rgb(234, 250, 249);
@@ -19,7 +24,6 @@ a:hover {
 
 .navigation {
     display: inline;
-    color: lime;
 
 }
 
@@ -31,10 +35,20 @@ li {
 }
 
 .header {
-    background-color: rgb(9, 10, 85);
+    background-color: #3d8fa8;
     color: antiquewhite;
+    padding-left: 20px;
 }
 
+.jc-portrait {
+    height: 200px;
+    width: 200px;
+    display: inline;
+    border: none;
+    padding: 0;
+    margin: 0;
+    
+}
 
 .bg {
     width: 100%;
@@ -42,11 +56,27 @@ li {
     z-index: 0;
 }
 
-.main {
+.main section{
     display: flex;
-    flex-flow: column;
-    justify-content: center;
+    flex-direction: row;
     background-color: rgb(226, 219, 219);
+    padding: 10px;
+}
+
+.main h2 {
+    width: 30%;
+    text-align: right;
+    font-size: 25px;
+    padding-right: 10px;
+    border-right: 2px solid rgb(9, 10, 85);
+}
+
+main p {
+    width: 70%;
+}
+
+.about {
+    display: inline;
 }
 
 .about-title {
@@ -55,6 +85,8 @@ li {
 
 .about-content {
     flex: 1 1 70%;
+    padding: 8px;
+    line-height: 2;
 }
 
 .large-image {
@@ -73,11 +105,26 @@ li {
    vertical-align: top;
 }
 
+footer {
+    background-color: rgb(105, 218, 70);
+    margin: 0;
+    height: 60px;
+    text-align: center;
+    padding: 10px;
+}
+
 @media screen and (max-width: 768px) {
-    header,
-    main,
-    nav
+    .header,
+    .navigation ul,
+    .main section,
+    .main h2,
+    .main p
     {
       flex-direction: column;
+      width: 100%;
+    }
+
+    .main h2 {
+        text-align: center;
     }
 }
